@@ -1,6 +1,8 @@
 import kotlinx.coroutines.*
 import kotlin.system.measureTimeMillis
 
+// Shows the problem with shared state
+
 fun main() {
     runBlocking {
         var counter = 0

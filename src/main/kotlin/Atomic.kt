@@ -4,7 +4,7 @@ import kotlin.system.measureTimeMillis
 
 fun main() {
     runBlocking {
-        var counter = AtomicInteger(0)
+        var counter = AtomicInteger(0)  // Special type of Integer class that can only be updated one at a time, makes threads wait
         withContext(Dispatchers.Default) {
             massiveRunAtomic { counter.incrementAndGet() }
         }
