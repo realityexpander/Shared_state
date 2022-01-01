@@ -29,3 +29,4 @@ suspend fun massiveRun(action: suspend () -> Unit) {
     }
     println("Completed ${n * k} actions in $time ms")
 }
+
